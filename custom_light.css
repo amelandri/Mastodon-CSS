@@ -35,6 +35,11 @@
 
 }
 
+.tabs-bar{
+    border-color: var(--bordercolor);
+     border-radius: 4px;
+}
+
 
 /* ----- Right sidebar */
 
