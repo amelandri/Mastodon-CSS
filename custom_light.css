@@ -11,12 +11,28 @@
 
 /* ----- Column width */
 
-.columns-area__panels__main{
-    max-width: 750px !important;
+@media screen and (min-width: 1800px) {
+    
+    .columns-area__panels__main{
+        max-width: 750px !important;
+    }
+
+    .columns-area__panels__pane, .columns-area__panels__pane__inner, .compose-panel{
+        width: 350px;
+    }
 }
 
-.columns-area__panels__pane, .columns-area__panels__pane__inner, .compose-panel{
-    width: 350px;
+
+@media screen and (min-width: 1330px) and (max-width: 1800px)  {
+    
+    .columns-area__panels__main{
+        max-width: 700px !important;
+    }
+
+    .columns-area__panels__pane, .columns-area__panels__pane__inner, .compose-panel{
+        width: 300px;
+    }
+
 }
 
 
