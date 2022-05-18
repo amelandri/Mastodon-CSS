@@ -1,0 +1,184 @@
+
+:root {
+    --bordercolor: #dadbdb;
+    --gray:        #797979;
+    --lightgray1:  #e3e8ea;
+    --lightgray2:  #edeff0;
+    --lightyellow: #fff6eb;
+    --lightblue:   #bcdef7;    
+    --blue:        #1572b5;
+}
+
+/* ----- Column width */
+
+.columns-area__panels__main{
+    max-width: 750px !important;
+}
+
+.columns-area__panels__pane, .columns-area__panels__pane__inner, .compose-panel{
+    width: 350px;
+}
+
+
+/* ----- Right sidebar */
+
+.getting-started__trends{
+    opacity: 0.3;
+    transition:opacity 0.5s;
+}
+
+.getting-started__trends:hover{
+     opacity: 0.8;
+}
+
+
+/* ----- Left sidebar */
+
+
+.search__input{
+    border-radius: 4px;
+    background-color: var(--lightgray1);
+    border-color: var(--bordercolor);
+}
+
+.compose-form__autosuggest-wrapper{
+    height: 220px;
+    border-color: var(--bordercolor);
+}
+
+.compose-form__buttons-wrapper{
+    border-color: var(--bordercolor) !important;
+}
+
+.getting-started__footer{
+    opacity: 0.3;
+    transition:opacity 0.5s;
+}
+
+.getting-started__footer:hover{
+    opacity: 0.8;
+}
+
+.reply-indicator{
+    background-color: var(--lightblue);
+}
+
+.reply-indicator a{
+    color: var(--blue);
+}
+
+/* ----- Main column */
+
+
+.column-header, .column-back-button{
+    border-radius: 4px 4px 0 0;
+    border-color: var(--bordercolor);
+}
+
+.account__section-headline, .notification__filter-bar, .account__section-headline button, .notification__filter-bar button{
+    background-color: var(--lightgray2) !important;
+    border-color: var(--bordercolor);
+}
+
+.status{
+     border-color: var(--bordercolor);
+}
+
+.column-inline-form, .column > .scrollable, .error-column, .getting-started, .regeneration-indicator{
+    border-color: var(--bordercolor);
+}
+
+.announcements{
+    background-color: var(--lightyellow);
+    border-color: var(--bordercolor);
+}
+
+.detailed-status__action-bar{
+     border-color: var(--bordercolor);
+}
+
+
+/* ----- Direct messages page */
+
+.follow_requests-unlocked_explanation{
+     background-color: var(--lightyellow);
+}
+
+.conversation{
+    border-color: var(--bordercolor);
+}
+
+
+/* ----- Trends page */
+
+.trends__item{
+    border-color: var(--bordercolor);
+}
+
+
+/* ----- News page */
+
+.story{
+    border-color: var(--bordercolor);
+}
+
+/* ----- For you page */
+
+.scrollable .account-card{
+    background-color: var(--lightgray1);
+}
+
+.account-card__bio::after{
+    display: none;
+}
+
+/* ----- Profile page */
+
+
+.account__header__fields .verified{
+    border: 0;
+}
+
+.account__header__bio .account__header__fields dl:first-child .verified{
+    border-radius: 0;
+}
+
+.account__header__bio .account__header__fields, .account__header__bar, .account__header__fields dl{
+    border-color: var(--bordercolor);
+}
+
+.account__header__account-note{
+     border-color: var(--bordercolor);
+     background-color: var(--lightyellow);
+}
+
+.account__header__bio{
+    border-bottom: 1px solid var(--bordercolor);
+    padding-bottom: 1em;
+    margin-bottom: 5px !important;
+}
+
+.account__header__fields dt, .account__header__fields dd{
+    text-align: left;
+    padding: 10px 14px;
+}
+
+.account__header__fields dt{
+    width: 180px;
+    
+}
+
+.account__header__fields .verified__mark{
+    float: right;
+    padding-top: 3px
+}
+
+.columns-area--mobile .account__header__bio .account__header__joined{
+    margin-top: 10px;
+    background-color: var(--lightgray1);
+    float: left;
+    margin-left: 20px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: var(--gray);
+}
