@@ -1,1 +1,2 @@
-# Mastodon-CSS
+# Mastodon Custom Style sheet
+
