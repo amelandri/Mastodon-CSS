@@ -1,39 +1,48 @@
 
 :root {
-    --bordercolor: #dadbdb;
-    --gray:        #797979;
-    --lightgray1:  #e3e8ea;
-    --lightgray2:  #edeff0;
-    --lightyellow: #fff6eb;
-    --lightblue:   #bcdef7;    
-    --blue:        #1572b5;
+    --bordercolor:  #dadbdb;
+    --gray:         #797979;
+    --darkgray:     #4f4f4f;
+    --lightgray1:   #e3e8ea;
+    --lightgray2:   #edeff0;
+    --lightyellow1: #fff6eb;
+    --lightyellow2: #f9e4c3;
+    --lightblue:    #bcdef7;    
+    --blue:         #1572b5;
 }
 
 /* ----- Column width */
 
-@media screen and (min-width: 1800px) {
+@media screen and (min-width: 1500px) {
     
     .columns-area__panels__main{
         max-width: 750px !important;
     }
 
-    .columns-area__panels__pane, .columns-area__panels__pane__inner, .compose-panel{
+    .columns-area__panels__pane--compositional, .columns-area__panels__pane--compositional > .columns-area__panels__pane__inner,  .compose-panel{
         width: 350px;
     }
+    
 }
 
 
-@media screen and (min-width: 1330px) and (max-width: 1800px)  {
+@media screen and (min-width: 1330px) and (max-width: 1500px)  {
     
     .columns-area__panels__main{
-        max-width: 700px !important;
+        max-width: 750px !important;
     }
 
-    .columns-area__panels__pane, .columns-area__panels__pane__inner, .compose-panel{
+    .columns-area__panels__pane--compositional, .columns-area__panels__pane--compositional > .columns-area__panels__pane__inner,  .compose-panel{
         width: 300px;
     }
 
 }
+
+
+.columns-area__panels__pane--navigational, .columns-area__panels__pane--navigational > .columns-area__panels__pane__inner{
+    width: 240px;
+}
+
 
 .tabs-bar{
     border-color: var(--bordercolor);
@@ -43,6 +52,10 @@
 
 /* ----- Right sidebar */
 
+.columns-area__panels__pane--navigational a{
+    opacity: 0.9
+}
+
 .getting-started__trends{
     opacity: 0.3;
     transition:opacity 0.5s;
@@ -50,6 +63,14 @@
 
 .getting-started__trends:hover{
      opacity: 0.8;
+}
+
+.trends__item__current span{
+    font-size: 20px
+}
+
+.column-link{
+    padding: 15px 15px 15px 5px;
 }
 
 
@@ -88,6 +109,22 @@
     color: var(--blue);
 }
 
+.navigation-bar__profile{
+    height: 42px
+}
+
+.navigation-bar__profile-account{
+    font-size: 16px;
+    opacity: 0.9;
+    display: block;
+    margin-bottom: 5px;
+   
+}
+
+.navigation-bar__profile-edit{
+    opacity: 0.4 !important;
+}
+
 /* ----- Main column */
 
 
@@ -110,7 +147,7 @@
 }
 
 .announcements{
-    background-color: var(--lightyellow);
+    background-color: var(--lightyellow1);
     border-color: var(--bordercolor);
 }
 
@@ -122,7 +159,7 @@
 /* ----- Direct messages page */
 
 .follow_requests-unlocked_explanation{
-     background-color: var(--lightyellow);
+     background-color: var(--lightyellow1);
 }
 
 .conversation{
@@ -156,6 +193,13 @@
 /* ----- Profile page */
 
 
+.account__header .account__header__fields{
+    margin: 10px 20px 0 20px !important;
+    border-left: 1px solid var(--lightgray1);
+    border-right: 1px solid var(--lightgray1);
+    border-radius: 4px;
+}
+
 .account__header__fields .verified{
     border: 0;
 }
@@ -168,9 +212,22 @@
     border-color: var(--bordercolor);
 }
 
+.account__header__content{
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    color: var(--darkgray) !important;
+    padding: 20px 24px !important;
+}
+
 .account__header__account-note{
-     border-color: var(--bordercolor);
-     background-color: var(--lightyellow);
+    margin: 20px 20px 0 20px;
+    border:0;
+    border-radius: 4px;
+    background-color: var(--lightyellow1);
+}
+
+.account__header__account-note__content:focus{
+    background-color: var(--lightyellow2) !important;
 }
 
 .account__header__bio{
@@ -184,9 +241,9 @@
     padding: 10px 14px;
 }
 
-.account__header__fields dt{
+.account__header .account__header__fields dt{
     width: 180px;
-    
+    border-right: 1px solid var(--lightgray1);
 }
 
 .account__header__fields .verified__mark{
