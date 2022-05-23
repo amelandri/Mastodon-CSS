@@ -180,6 +180,22 @@
     border-color: var(--bordercolor);
 }
 
+
+/* ----- Lists page */
+
+.setting-text{
+    padding: 7px;
+}
+
+.getting-started .column-link, .scrollable .column-link{
+	border-bottom: 1px solid var(--lightgray1);
+}
+
+.column-link .column-link__icon{
+	font-size: 0.9em;
+	opacity: 0.7;
+}
+
 /* ----- For you page */
 
 .scrollable .account-card{
