@@ -5,6 +5,8 @@
     --darkgray:     #4f4f4f;
     --lightgray1:   #e3e8ea;
     --lightgray2:   #edeff0;
+	--lightgray3:   #f4f4f4;
+	--lightgray4:   #f9f9f9;
     --lightyellow1: #fff6eb;
     --lightyellow2: #f9e4c3;
     --lightblue:    #bcdef7;    
@@ -155,6 +157,34 @@
      border-color: var(--bordercolor);
 }
 
+.columns-area--mobile .status__action-bar{
+	margin-top: 20px;
+	opacity: 0.7;
+	transition:opacity 0.3s;
+}
+
+.columns-area--mobile .status__action-bar:hover{
+	opacity: 1
+}
+
+.status__relative-time{
+	opacity: 0.5;
+	transition:opacity 0.3s;
+}
+
+.status__relative-time:hover{
+	opacity: 1
+}
+
+.status__wrapper--filtered{
+	background-image: repeating-linear-gradient(135deg, var(--lightgray3), var(--lightgray3) 10px, var(--lightgray4) 10px, var(--lightgray4) 20px);
+	font-weight: bold;
+	letter-spacing: 0.1rem;
+	font-size: 0.90rem;
+	text-transform: uppercase;
+	color: var(--gray);
+	border-color: var(--bordercolor)
+}
 
 /* ----- Direct messages page */
 
@@ -189,11 +219,6 @@
 
 .getting-started .column-link, .scrollable .column-link{
 	border-bottom: 1px solid var(--lightgray1);
-}
-
-.column-link .column-link__icon{
-	font-size: 0.9em;
-	opacity: 0.7;
 }
 
 /* ----- For you page */
