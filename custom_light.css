@@ -11,6 +11,7 @@
     --lightyellow2: #f9e4c3;
     --lightblue:    #bcdef7;    
     --blue:         #1572b5;
+	--mutedblack  : #090909;
 }
 
 /* ----- Column width */
@@ -184,6 +185,18 @@
 	text-transform: uppercase;
 	color: var(--gray);
 	border-color: var(--bordercolor)
+}
+
+.reply-indicator__content p, .status__content p{
+	line-height: 1.4rem;
+	margin-bottom: 0.8rem
+}
+
+.detailed-status .status__content p{
+	line-height: 1.6rem;
+	color: var(--mutedblack);
+	font-size: 1rem;
+	margin-bottom: 0.8rem
 }
 
 /* ----- Direct messages page */
