@@ -93,14 +93,16 @@ body{
     background-color: var(--white);
     border: 0;
 	padding: 14px 30px 15px 14px;
+	color: var(--gray);
 }
 
 .search__input:focus{
-	background-color: var(--lightgray4);
+	background: var(--white);
+	box-shadow: inset 0px 0px 2px var(--blue);
 }
 
-.compose-form .autosuggest-textarea__textarea:focus{
-	color: #666;
+.compose-form .autosuggest-textarea__textarea{
+	color: var(--gray);
 	letter-spacing: 0.02rem;
 }
 
