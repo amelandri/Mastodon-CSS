@@ -1,19 +1,25 @@
 
 :root {
+	--white:        #ffffff;
+	--background:   #eef0f4;
     --bordercolor:  #dadbdb;
     --gray:         #797979;
     --darkgray:     #4f4f4f;
     --lightgray1:   #e3e8ea;
-    --lightgray2:   #edeff0;
+    --lightgray2:   #f6f8fb;
 	--lightgray3:   #f4f4f4;
 	--lightgray4:   #f9f9f9;
     --lightyellow1: #fff6eb;
     --lightyellow2: #f9e4c3;
     --lightblue:    #bcdef7;    
-    --blue:         #1572b5;
+    --blue:         #339ce8;
 	--mutedblack  : #090909;
 	
-	--border-radius: 4px;
+	--border-radius: 6px;
+}
+
+body{
+	background: var(--background);
 }
 
 /* ----- Column width */
@@ -84,8 +90,8 @@
 
 .search__input{
     border-radius: var(--border-radius);
-    background-color: var(--lightgray1);
-    border-color: var(--bordercolor);
+    background-color: var(--white);
+    border: 0;
 	padding: 14px 30px 15px 14px;
 }
 
@@ -93,18 +99,22 @@
 	background-color: var(--lightgray4);
 }
 
-.compose-form__autosuggest-wrapper{
-    height: 220px;
-    border-color: var(--bordercolor);
-	border-radius: var(--border-radius) var(--border-radius) 0 0 !important;
+.compose-form .autosuggest-textarea__textarea:focus{
+	color: #666;
+	letter-spacing: 0.02rem;
 }
 
-.compose-form__buttons-wrapper{
-    border-color: var(--bordercolor) !important;
+.compose-form__autosuggest-wrapper{
+    height: 220px;
+    border-width: 0 0 1px 0;
+	border-radius: var(--border-radius) var(--border-radius) 0 0 !important;
+	border-color: var(--background)
 }
 
 .compose-form .compose-form__buttons-wrapper{
+	border-width: 0;
 	border-radius: 0 0 var(--border-radius) var(--border-radius);
+	background: var(--lightgray2);
 }
 
 .getting-started__footer{
@@ -142,23 +152,33 @@
 
 /* ----- Main column */
 
+.tabs-bar__wrapper{
+	background: var(--background);
+}
 
 .column-header, .column-back-button{
     border-radius: var(--border-radius) var(--border-radius) 0 0;
-    border-color: var(--bordercolor);
+    border-width: 0 0 2px 0;
+	border-color: var(--background);
+}
+
+.column-header__icon{
+	color: var(--blue)
 }
 
 .account__section-headline, .notification__filter-bar, .account__section-headline button, .notification__filter-bar button{
     background-color: var(--lightgray2) !important;
-    border-color: var(--bordercolor);
+    border-color: var(--background);
+	border-width: 1px 0 1px 0;
 }
 
 .status{
-     border-color: var(--bordercolor);
+     border-color: var(--background);
+	border-width: 1px
 }
 
 .column-inline-form, .column > .scrollable, .error-column, .getting-started, .regeneration-indicator{
-    border-color: var(--bordercolor);
+   border: 0;
 }
 
 .announcements{
@@ -209,6 +229,14 @@
 	color: var(--mutedblack);
 	font-size: 1rem;
 	margin-bottom: 0.8rem
+}
+
+.status-card.compact{
+	border-color: var(--lightgray1)
+}
+
+a.status-card.compact:hover{
+	background: var(--background);
 }
 
 /* ----- Direct messages page */
@@ -275,7 +303,11 @@
 }
 
 .account__header__bio .account__header__fields, .account__header__bar, .account__header__fields dl{
-    border-color: var(--bordercolor);
+    border-color: var(--background);
+}
+
+.account__header__bio .account__header__fields dl:first-child .verified{
+	border-radius: 0 var(--border-radius) 0 0; 
 }
 
 .account__header__content{
@@ -297,7 +329,7 @@
 }
 
 .account__header__bio{
-    border-bottom: 1px solid var(--bordercolor);
+    border-bottom: 1px solid var(--background);
     padding-bottom: 1em;
     margin-bottom: 5px !important;
 }
