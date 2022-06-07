@@ -73,8 +73,8 @@ body{
 
 .columns-area__panels__pane--navigational a{
     opacity: 0.7;
-	font-size: 0.92rem;
-	padding: 10px 15px 10px 5px;
+	font-size: 0.95rem;
+	padding: 11px 15px 11px 5px;
 }
 
 .getting-started__trends{
@@ -141,9 +141,7 @@ body{
 }
 
 .emojione{
-	
     content: url("/emoji/1f600.svg");
-
 }
 
 .compose-form__autosuggest-wrapper{
@@ -200,12 +198,23 @@ body{
 
 .column-header, .column-back-button{
     border-radius: var(--border-radius) var(--border-radius) 0 0;
-    border-width: 0 0 2px 0;
+    border-width: 0 0 1px 0;
 	border-color: var(--background);
+}
+
+.column-header button{
+	color: var(--mutedblack);
+	letter-spacing: 0.01rem
 }
 
 .column-header__icon{
 	color: var(--blue)
+}
+
+.column-header__collapsible-inner{
+	background: var(--lightyellow1);
+	border-width: 0 0 1px 0;
+	border-color: var(--background);
 }
 
 .account__section-headline, .notification__filter-bar, .account__section-headline button, .notification__filter-bar button{
@@ -240,6 +249,11 @@ body{
 
 .columns-area--mobile .status__action-bar:hover{
 	opacity: 1
+}
+
+.display-name__account{
+	opacity: 0.5;
+	transition:opacity 0.3s;
 }
 
 .status__relative-time{
