@@ -298,6 +298,7 @@ a.status-card.compact:hover{
 
 .follow_requests-unlocked_explanation{
      background-color: var(--lightyellow1);
+	border-bottom: 1px solid var(--background)
 }
 
 .conversation{
