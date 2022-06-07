@@ -35,7 +35,7 @@ body{
     }
 	
 	.columns-area__panels{
-		padding-left: 20px;
+		padding-left: 35px;
 	}
     
 }
@@ -52,14 +52,14 @@ body{
     }
 	
 	.columns-area__panels{
-		padding-left: 20px;
+		padding-left: 35px;
 	}
 
 }
 
 
 .columns-area__panels__pane--navigational, .columns-area__panels__pane--navigational > .columns-area__panels__pane__inner{
-    width: 240px;
+    width: 200px;
 }
 
 
@@ -72,7 +72,9 @@ body{
 /* ----- Right sidebar */
 
 .columns-area__panels__pane--navigational a{
-    opacity: 0.9
+    opacity: 0.7;
+	font-size: 0.92rem;
+	padding: 10px 15px 10px 5px;
 }
 
 .getting-started__trends{
@@ -90,6 +92,30 @@ body{
 
 .column-link{
     padding: 15px 15px 15px 5px;
+}
+
+.trends__item__current{
+	padding-right: 5px
+}
+
+.trends__item__current span{
+	font-size: 1rem;
+}
+
+.trends__item__name a{
+	padding: 5px 0 5px 0;
+}
+
+.trends__item__name a span {
+	font-size: 0.85rem
+}
+
+.trends__item__name span {
+	font-size: 0.72rem
+}
+
+.navigation-panel hr{
+	opacity: 0.5
 }
 
 
