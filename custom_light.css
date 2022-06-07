@@ -2,7 +2,6 @@
 :root {
 	--white:        #ffffff;
 	--background:   #eef0f4;
-    --bordercolor:  #dadbdb;
     --gray:         #797979;
     --darkgray:     #4f4f4f;
     --lightgray1:   #e3e8ea;
@@ -64,7 +63,7 @@ body{
 
 
 .tabs-bar{
-    border-color: var(--bordercolor);
+    border-color: var(--background);
     border-radius: var(--border-radius);
 }
 
@@ -234,11 +233,11 @@ body{
 
 .announcements{
     background-color: var(--lightyellow1);
-    border-color: var(--bordercolor);
+    border-color: var(--background);
 }
 
 .detailed-status__action-bar{
-     border-color: var(--bordercolor);
+     border-color: var(--background);
 }
 
 .columns-area--mobile .status__action-bar{
@@ -272,7 +271,7 @@ body{
 	font-size: 0.90rem;
 	text-transform: uppercase;
 	color: var(--gray);
-	border-color: var(--bordercolor)
+	border-color: var(--background)
 }
 
 .reply-indicator__content p, .status__content p{
@@ -302,21 +301,21 @@ a.status-card.compact:hover{
 }
 
 .conversation{
-    border-color: var(--bordercolor);
+    border-color: var(--background);
 }
 
 
 /* ----- Trends page */
 
 .trends__item{
-    border-color: var(--bordercolor);
+    border-color: var(--background);
 }
 
 
 /* ----- News page */
 
 .story{
-    border-color: var(--bordercolor);
+    border-color: var(--background);
 }
 
 
