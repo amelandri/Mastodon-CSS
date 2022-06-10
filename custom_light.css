@@ -139,7 +139,7 @@ body{
 	letter-spacing: 0.02rem;
 }
 
-.emojione{
+.emoji-picker-dropdown .emojione{
     content: url("/emoji/1f600.svg");
 }
 
