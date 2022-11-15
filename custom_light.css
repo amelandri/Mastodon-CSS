@@ -1,20 +1,28 @@
+/* ==UserStyle==
+@name           mastodon.uno - 10/08/2022, 13:36:21
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
 
+@-moz-document domain("mastodon.uno") {
+    
 :root {
-	--white:        #ffffff;
-	--background:   #eef0f4;
+    --white:        #ffffff;
+    --background:   #eef0f4;
     --gray:         #797979;
     --darkgray:     #4f4f4f;
     --lightgray1:   #e3e8ea;
     --lightgray2:   #f6f8fb;
-	--lightgray3:   #f4f4f4;
-	--lightgray4:   #f9f9f9;
+    --lightgray3:   #f4f4f4;
+    --lightgray4:   #f9f9f9;
     --lightyellow1: #fff6eb;
     --lightyellow2: #f9e4c3;
     --lightblue:    #bcdef7;    
-    --blue:         #339ce8;
-	--mutedblack  : #090909;
-	
-	--border-radius: 6px;
+    --blue:         #3a3bff;
+    --mutedblack:   #090909;
+    --border-radius: 6px;
 }
 
 body{
@@ -33,6 +41,7 @@ body{
         width: 350px;
     }
 	
+    
 }
 
 
@@ -116,6 +125,9 @@ body{
 
 /* ----- Left sidebar */
 
+.compose__action-bar-dropdown button{
+    opacity: 0.8;
+}
 
 .search__input{
     border-radius: var(--border-radius);
@@ -123,11 +135,16 @@ body{
     border: 0;
 	padding: 14px 30px 15px 14px;
 	color: var(--gray);
+    font-size: 0.9rem;
 }
 
 .search__input:focus{
 	background: var(--white);
 	box-shadow: inset 0px 0px 2px var(--blue);
+}
+    
+.compose-form{
+    padding: 0;
 }
 
 .compose-form .autosuggest-textarea__textarea{
@@ -152,12 +169,12 @@ body{
 	background: var(--lightgray2);
 }
 
-.getting-started__footer{
+.link-footer{
     opacity: 0.3;
     transition:opacity 0.5s;
 }
 
-.getting-started__footer:hover{
+.link-footer:hover{
     opacity: 0.8;
 }
 
@@ -167,6 +184,10 @@ body{
 
 .reply-indicator a{
     color: var(--blue);
+}
+    
+.navigation-bar{
+    padding: 5px 0 15px 2px;
 }
 
 .navigation-bar__profile{
@@ -409,4 +430,5 @@ a.status-card.compact:hover{
     padding: 5px 10px;
     border-radius: var(--border-radius);
     color: var(--gray);
+}
 }
