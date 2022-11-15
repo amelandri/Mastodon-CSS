@@ -368,21 +368,21 @@ a.status-card.compact:hover{
     border-radius: var(--border-radius);
 }
 
-.account__header__fields .verified{
-    border: 0;
+  
+.account__header__bio .account__header__fields .verified{
+    border-width: 0;
+}
+    
+.account__header__bio .account__header__fields .verified ~ .verified{
+    border-width: 1px 0 0 0;
 }
 
-.account__header__bio .account__header__fields dl:first-child .verified{
-    border-radius: 0;
-}
 
 .account__header__bio .account__header__fields, .account__header__bar, .account__header__fields dl{
     border-color: var(--background);
 }
 
-.account__header__bio .account__header__fields dl:first-child .verified{
-	border-radius: 0 var(--border-radius) 0 0; 
-}
+
 
 .account__header__content{
     font-size: 1.1rem;
@@ -424,7 +424,6 @@ a.status-card.compact:hover{
 
 .account__header .account__header__fields dt{
     width: 180px;
-    border-right: 1px solid var(--lightgray1);
 }
 
 .account__header__fields .verified__mark{
