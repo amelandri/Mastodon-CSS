@@ -9,20 +9,21 @@
 @-moz-document domain("mastodon.uno") {
     
 :root {
-    --white:        #ffffff;
-    --background:   #eef0f4;
+	--white:        #ffffff;
+	--background:   #eef0f4;
     --gray:         #797979;
     --darkgray:     #4f4f4f;
     --lightgray1:   #e3e8ea;
     --lightgray2:   #f6f8fb;
-    --lightgray3:   #f4f4f4;
-    --lightgray4:   #f9f9f9;
+	--lightgray3:   #f4f4f4;
+	--lightgray4:   #f9f9f9;
     --lightyellow1: #fff6eb;
     --lightyellow2: #f9e4c3;
     --lightblue:    #bcdef7;    
     --blue:         #3a3bff;
-    --mutedblack:   #090909;
-    --border-radius: 6px;
+	--mutedblack  : #090909;
+	
+	--border-radius: 6px;
 }
 
 body{
@@ -361,7 +362,7 @@ a.status-card.compact:hover{
 
 
 .account__header .account__header__fields{
-    margin: 10px 20px 0 20px !important;
+    margin: 10px 0 0 0 !important;
     border-left: 1px solid var(--lightgray1);
     border-right: 1px solid var(--lightgray1);
     border-radius: var(--border-radius);
@@ -387,14 +388,23 @@ a.status-card.compact:hover{
     font-size: 1.1rem;
     line-height: 1.6rem;
     color: var(--darkgray) !important;
-    padding: 20px 24px !important;
+    padding: 20px 0px !important;
 }
 
 .account__header__account-note{
-    margin: 20px 20px 0 20px;
+    margin: 20px 0px 0 0px;
     border:0;
     border-radius: var(--border-radius);
     background-color: var(--lightyellow1);
+}
+    
+.account__header__account-note label{
+    padding: 10px 10px 0 10px;
+}
+    
+.account__header__account-note textarea{
+    width: 100% !important;
+    margin: 0;
 }
 
 .account__header__account-note__content:focus{
