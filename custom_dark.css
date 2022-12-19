@@ -23,7 +23,8 @@
 	@media screen and (min-width: 1500px) {
 		
 		.columns-area__panels__main{
-			max-width: 750px !important;
+			max-width: 730px !important;
+			padding: 0 20px !important;
 		}
 	
 		.columns-area__panels__pane--compositional, .columns-area__panels__pane--compositional > .columns-area__panels__pane__inner,  .compose-panel{
@@ -37,7 +38,8 @@
 	@media screen and (min-width: 1330px) and (max-width: 1500px)  {
 		
 		.columns-area__panels__main{
-			max-width: 750px !important;
+			max-width: 730px !important;
+			padding: 0 20px!important ;
 		}
 	
 		.columns-area__panels__pane--compositional, .columns-area__panels__pane--compositional > .columns-area__panels__pane__inner,  .compose-panel{
@@ -50,6 +52,17 @@
 	
 	}
 	
+	@media screen and (max-width: 1174px){
+		.columns-area__panels__pane--navigational .navigation-panel {
+			padding-left: 10px;
+		}
+		
+		.columns-area--mobile .compose-form, .columns-area--mobile .navigation-bar{
+		   padding: 20px 20px 10px 20px;
+		}
+		
+		.navigation-bar
+	}
 	
 	.columns-area__panels__pane--navigational, .columns-area__panels__pane--navigational > .columns-area__panels__pane__inner{
 		width: 200px;
@@ -230,7 +243,11 @@
 	.status{
 		border-width: 1px
 	}
-	
+		
+	.account__display-name strong, .status__display-name strong{
+		  font-size: 1rem; 
+	}
+		
 	.column-inline-form, .column > .scrollable, .error-column, .getting-started, .regeneration-indicator{
 	   border: 0;
 	}
@@ -272,7 +289,8 @@
 	}
 	
 	.reply-indicator__content p, .status__content p{
-		line-height: 1.4rem;
+		line-height: 1.5rem;
+		font-size:0.96rem;
 		margin-bottom: 0.8rem
 	}
 	

@@ -35,7 +35,8 @@ body{
 @media screen and (min-width: 1500px) {
     
     .columns-area__panels__main{
-        max-width: 750px !important;
+        max-width: 730px !important;
+        padding: 0 20px !important;
     }
 
     .columns-area__panels__pane--compositional, .columns-area__panels__pane--compositional > .columns-area__panels__pane__inner,  .compose-panel{
@@ -49,7 +50,8 @@ body{
 @media screen and (min-width: 1330px) and (max-width: 1500px)  {
     
     .columns-area__panels__main{
-        max-width: 750px !important;
+        max-width: 730px !important;
+        padding: 0 20px !important;
     }
 
     .columns-area__panels__pane--compositional, .columns-area__panels__pane--compositional > .columns-area__panels__pane__inner,  .compose-panel{
@@ -60,6 +62,18 @@ body{
 		padding-left: 35px;
 	}
 
+}
+
+@media screen and (max-width: 1174px){
+    .columns-area__panels__pane--navigational .navigation-panel {
+        padding-left: 10px;
+    }
+    
+    .columns-area--mobile .compose-form, .columns-area--mobile .navigation-bar{
+       padding: 20px 20px 10px 20px;
+    }
+    
+    .navigation-bar
 }
 
 
