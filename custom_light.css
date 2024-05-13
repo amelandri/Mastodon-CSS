@@ -1,13 +1,10 @@
-/* ==UserStyle==
-@name           mastodon.uno - 15/11/2022, 12:13:00
-@namespace      github.com/openstyles/stylus
-@version        1.0.1
+/*
+@date           13/05/2024
+@version        1.0.2
 @description    Cleaner look for Mastodon
 @author         Alessandro Melandri
-==/UserStyle== */
+ */
 
-@-moz-document domain("mastodon.uno") {
-    
 :root {
 	--white:        #ffffff;
 	--background:   #eef0f4;
@@ -22,6 +19,7 @@
     --lightblue:    #bcdef7;    
     --blue:         #3a3bff;
 	--mutedblack  : #090909;
+    --lightpurple:  #d3d4eb;
 	
 	--border-radius: 6px;
 }
@@ -73,7 +71,7 @@ body{
        padding: 20px 20px 10px 20px;
     }
     
-    .navigation-bar
+
 }
 
 
@@ -103,6 +101,10 @@ body{
 
 .getting-started__trends:hover{
      opacity: 0.8;
+}
+
+.getting-started__trends h4, .getting-started__trends h4 {
+    padding-left: 0;
 }
 
 .trends__item__current span{
@@ -156,6 +158,11 @@ body{
 .search__input:focus{
 	background: var(--white);
 	box-shadow: inset 0px 0px 2px var(--blue);
+    border-radius: var(--border-radius) var(--border-radius) 0 0; 
+}
+
+.search__popout{
+    background: var(--lightpurple);
 }
     
 .compose-form{
@@ -453,5 +460,4 @@ a.status-card.compact:hover{
     padding: 5px 10px;
     border-radius: var(--border-radius);
     color: var(--gray);
-}
 }
